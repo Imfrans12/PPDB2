@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= form_for(@ppdbs) do |ppdb| %>
+        <div class="form-group">
+          <%= ppdb.label :Nis %>
+          <%= ppdb.text_field :nis, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+
+        <div class="form-group">
+          <%= ppdb.label :Nama %>
+          <%= ppdb.text_field :nama, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :jenis_kelamin %>
+          <%= ppdb.text_field :jenis_kelamin, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :tempat_lahir %>
+          <%= ppdb.text_field :tempat_lahir, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :tanggal_lahir %>
+          <%= ppdb.text_field :tanggal_lahir, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :alamat %>
+          <%= ppdb.text_field :alamat, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :asal_sekolah %>
+          <%= ppdb.text_field :asal_sekolah, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :kelas %>
+          <%= ppdb.text_field :kelas, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div class="form-group">
+          <%= ppdb.label :jurusan %>
+          <%= ppdb.text_field :jurusan, class:'form-control', type: 'text', placeholder: '',required: true %>
+        </div>
+        <div style="float: left">
+  <%= link_to 'Back', '/ppdbs', class: 'btn btn-primary' %>
+        </div>
+        <div style="float: right">
+  <%= ppdb.submit :Save, class:'btn btn-success' %>
+</div>
+    <% end %>
+  </div>
+</div>

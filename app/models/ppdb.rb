@@ -1,0 +1,2 @@
+class Ppdb < ApplicationRecord
+end
